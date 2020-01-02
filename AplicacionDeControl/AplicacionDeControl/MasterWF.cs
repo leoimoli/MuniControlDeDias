@@ -19,8 +19,8 @@ namespace AplicacionDeControl
 
         private void MasterWF_Load(object sender, EventArgs e)
         {
-            //this.Location = Screen.PrimaryScreen.WorkingArea.Location;
-            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
         }
 
         private void personalToolStripMenuItem_Click(object sender, EventArgs e)

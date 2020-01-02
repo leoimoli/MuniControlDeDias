@@ -12,3 +12,10 @@ C:\Users\limoli\Source\Repos\Sico-Web\Sico\AplicacionDeControl\AplicacionDeContr
 C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\bin\Debug\AplicacionDeControl.exe.config
 C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\obj\Debug\AplicacionDeControl.exe
 C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\obj\Debug\AplicacionDeControl.pdb
+C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\bin\Debug\AplicacionDeControl.exe
+C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\bin\Debug\AplicacionDeControl.pdb
+C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\obj\Debug\AplicacionDeControl.csprojResolveAssemblyReference.cache
+C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\obj\Debug\AplicacionDeControl.MasterWF.resources
+C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\obj\Debug\AplicacionDeControl.PersonalWF.resources
+C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\obj\Debug\AplicacionDeControl.Properties.Resources.resources
+C:\Users\limoli\Source\Repos\Muni\AplicacionDeControl\AplicacionDeControl\obj\Debug\AplicacionDeControl.csproj.GenerateResource.Cache

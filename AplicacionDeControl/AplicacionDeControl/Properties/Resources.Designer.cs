@@ -153,6 +153,16 @@ namespace AplicacionDeControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nuevo_usuario_2_ {
+            get {
+                object obj = ResourceManager.GetObject("nuevo-usuario(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap relacion_de_usuarios {
             get {
                 object obj = ResourceManager.GetObject("relacion-de-usuarios", resourceCulture);
@@ -166,6 +176,26 @@ namespace AplicacionDeControl.Properties {
         internal static System.Drawing.Bitmap resultar {
             get {
                 object obj = ResourceManager.GetObject("resultar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario_2_ {
+            get {
+                object obj = ResourceManager.GetObject("usuario(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario_3_ {
+            get {
+                object obj = ResourceManager.GetObject("usuario(3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
