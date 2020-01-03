@@ -31,19 +31,22 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnJugador = new System.Windows.Forms.Button();
-            this.btnEliminarJugadorMenu = new System.Windows.Forms.Button();
+            this.btnEliminarPersona = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtArea = new System.Windows.Forms.TextBox();
+            this.lblArea = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
             this.lblIdJugador = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lblTexto = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.lblAltura = new System.Windows.Forms.Label();
-            this.lblPeso = new System.Windows.Forms.Label();
+            this.lblSecretaria = new System.Windows.Forms.Label();
+            this.lblSubse = new System.Windows.Forms.Label();
             this.dtFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.cmbSexo = new System.Windows.Forms.ComboBox();
             this.lblFechaNacimiento = new System.Windows.Forms.Label();
-            this.lblApodo = new System.Windows.Forms.Label();
+            this.lblLegajo = new System.Windows.Forms.Label();
             this.txtApodo = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
@@ -55,26 +58,27 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscarApellidoNombre = new System.Windows.Forms.TextBox();
             this.lblDniOApellidoNombre = new System.Windows.Forms.Label();
-            this.lblTexto = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPeso = new System.Windows.Forms.TextBox();
-            this.txtAltura = new System.Windows.Forms.TextBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.btnFicha = new System.Windows.Forms.Button();
+            this.cmbSecretaria = new System.Windows.Forms.ComboBox();
+            this.cmbSubse = new System.Windows.Forms.ComboBox();
+            this.cmbDireccion = new System.Windows.Forms.ComboBox();
+            this.txtPuesto = new System.Windows.Forms.TextBox();
+            this.lblPuesto = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnFicha);
             this.groupBox1.Controls.Add(this.btnEditar);
             this.groupBox1.Controls.Add(this.btnJugador);
-            this.groupBox1.Controls.Add(this.btnEliminarJugadorMenu);
+            this.groupBox1.Controls.Add(this.btnEliminarPersona);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 175);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(148, 344);
+            this.groupBox1.Size = new System.Drawing.Size(148, 397);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menú";
@@ -91,6 +95,7 @@
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnJugador
             // 
@@ -104,39 +109,44 @@
             this.btnJugador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnJugador.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnJugador.UseVisualStyleBackColor = true;
+            this.btnJugador.Click += new System.EventHandler(this.btnJugador_Click);
             // 
-            // btnEliminarJugadorMenu
+            // btnEliminarPersona
             // 
-            this.btnEliminarJugadorMenu.Image = global::AplicacionDeControl.Properties.Resources.usuario_3_;
-            this.btnEliminarJugadorMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminarJugadorMenu.Location = new System.Drawing.Point(9, 237);
-            this.btnEliminarJugadorMenu.Name = "btnEliminarJugadorMenu";
-            this.btnEliminarJugadorMenu.Size = new System.Drawing.Size(133, 55);
-            this.btnEliminarJugadorMenu.TabIndex = 1;
-            this.btnEliminarJugadorMenu.Text = "Eliminar Personal";
-            this.btnEliminarJugadorMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarJugadorMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnEliminarJugadorMenu.UseVisualStyleBackColor = true;
+            this.btnEliminarPersona.Image = global::AplicacionDeControl.Properties.Resources.usuario_3_;
+            this.btnEliminarPersona.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminarPersona.Location = new System.Drawing.Point(9, 231);
+            this.btnEliminarPersona.Name = "btnEliminarPersona";
+            this.btnEliminarPersona.Size = new System.Drawing.Size(133, 55);
+            this.btnEliminarPersona.TabIndex = 1;
+            this.btnEliminarPersona.Text = "Eliminar Personal";
+            this.btnEliminarPersona.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarPersona.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnEliminarPersona.UseVisualStyleBackColor = true;
+            this.btnEliminarPersona.Click += new System.EventHandler(this.btnEliminarPersona_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txtPuesto);
+            this.groupBox2.Controls.Add(this.lblPuesto);
+            this.groupBox2.Controls.Add(this.progressBar1);
+            this.groupBox2.Controls.Add(this.cmbDireccion);
+            this.groupBox2.Controls.Add(this.cmbSubse);
+            this.groupBox2.Controls.Add(this.cmbSecretaria);
+            this.groupBox2.Controls.Add(this.txtArea);
+            this.groupBox2.Controls.Add(this.lblArea);
+            this.groupBox2.Controls.Add(this.lblDireccion);
             this.groupBox2.Controls.Add(this.lblIdJugador);
             this.groupBox2.Controls.Add(this.lblTexto);
-            this.groupBox2.Controls.Add(this.txtPeso);
-            this.groupBox2.Controls.Add(this.txtAltura);
             this.groupBox2.Controls.Add(this.btnCancelar);
             this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Controls.Add(this.btnEliminar);
-            this.groupBox2.Controls.Add(this.lblAltura);
-            this.groupBox2.Controls.Add(this.lblPeso);
+            this.groupBox2.Controls.Add(this.lblSecretaria);
+            this.groupBox2.Controls.Add(this.lblSubse);
             this.groupBox2.Controls.Add(this.dtFechaNacimiento);
             this.groupBox2.Controls.Add(this.cmbSexo);
             this.groupBox2.Controls.Add(this.lblFechaNacimiento);
-            this.groupBox2.Controls.Add(this.lblApodo);
+            this.groupBox2.Controls.Add(this.lblLegajo);
             this.groupBox2.Controls.Add(this.txtApodo);
             this.groupBox2.Controls.Add(this.lblNombre);
             this.groupBox2.Controls.Add(this.txtDni);
@@ -151,11 +161,42 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(201, 96);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(950, 566);
+            this.groupBox2.Size = new System.Drawing.Size(950, 583);
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             this.groupBox2.Visible = false;
+            // 
+            // txtArea
+            // 
+            this.txtArea.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtArea.Location = new System.Drawing.Point(366, 426);
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(269, 23);
+            this.txtArea.TabIndex = 69;
+            this.txtArea.Visible = false;
+            // 
+            // lblArea
+            // 
+            this.lblArea.AutoSize = true;
+            this.lblArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArea.Location = new System.Drawing.Point(313, 426);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.Size = new System.Drawing.Size(47, 20);
+            this.lblArea.TabIndex = 68;
+            this.lblArea.Text = "Área:";
+            this.lblArea.Visible = false;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Location = new System.Drawing.Point(178, 383);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(182, 20);
+            this.lblDireccion.TabIndex = 66;
+            this.lblDireccion.Text = "Dirección Perteneciente:";
+            this.lblDireccion.Visible = false;
             // 
             // lblIdJugador
             // 
@@ -168,20 +209,21 @@
             this.lblIdJugador.Text = "@";
             this.lblIdJugador.Visible = false;
             // 
-            // progressBar1
+            // lblTexto
             // 
-            this.progressBar1.Location = new System.Drawing.Point(506, 681);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(330, 23);
-            this.progressBar1.TabIndex = 64;
-            this.progressBar1.Value = 50;
-            this.progressBar1.Visible = false;
+            this.lblTexto.AutoSize = true;
+            this.lblTexto.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTexto.Location = new System.Drawing.Point(337, 150);
+            this.lblTexto.Name = "lblTexto";
+            this.lblTexto.Size = new System.Drawing.Size(298, 25);
+            this.lblTexto.TabIndex = 39;
+            this.lblTexto.Text = "Seleccione una función del Menú";
             // 
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(439, 500);
+            this.btnCancelar.Location = new System.Drawing.Point(439, 516);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(80, 51);
             this.btnCancelar.TabIndex = 61;
@@ -194,7 +236,7 @@
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(526, 500);
+            this.btnGuardar.Location = new System.Drawing.Point(526, 516);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(80, 51);
             this.btnGuardar.TabIndex = 58;
@@ -207,7 +249,7 @@
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEliminar.Location = new System.Drawing.Point(353, 500);
+            this.btnEliminar.Location = new System.Drawing.Point(353, 516);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(80, 51);
             this.btnEliminar.TabIndex = 59;
@@ -216,31 +258,31 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Visible = false;
             // 
-            // lblAltura
+            // lblSecretaria
             // 
-            this.lblAltura.AutoSize = true;
-            this.lblAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAltura.Location = new System.Drawing.Point(171, 316);
-            this.lblAltura.Name = "lblAltura";
-            this.lblAltura.Size = new System.Drawing.Size(189, 20);
-            this.lblAltura.TabIndex = 52;
-            this.lblAltura.Text = "Secretaria Perteneciente:";
-            this.lblAltura.Visible = false;
+            this.lblSecretaria.AutoSize = true;
+            this.lblSecretaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecretaria.Location = new System.Drawing.Point(171, 299);
+            this.lblSecretaria.Name = "lblSecretaria";
+            this.lblSecretaria.Size = new System.Drawing.Size(189, 20);
+            this.lblSecretaria.TabIndex = 52;
+            this.lblSecretaria.Text = "Secretaria Perteneciente:";
+            this.lblSecretaria.Visible = false;
             // 
-            // lblPeso
+            // lblSubse
             // 
-            this.lblPeso.AutoSize = true;
-            this.lblPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPeso.Location = new System.Drawing.Point(137, 356);
-            this.lblPeso.Name = "lblPeso";
-            this.lblPeso.Size = new System.Drawing.Size(223, 20);
-            this.lblPeso.TabIndex = 51;
-            this.lblPeso.Text = "Sub-Secretaria Perteneciente:";
-            this.lblPeso.Visible = false;
+            this.lblSubse.AutoSize = true;
+            this.lblSubse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubse.Location = new System.Drawing.Point(137, 339);
+            this.lblSubse.Name = "lblSubse";
+            this.lblSubse.Size = new System.Drawing.Size(223, 20);
+            this.lblSubse.TabIndex = 51;
+            this.lblSubse.Text = "Sub-Secretaria Perteneciente:";
+            this.lblSubse.Visible = false;
             // 
             // dtFechaNacimiento
             // 
-            this.dtFechaNacimiento.Location = new System.Drawing.Point(562, 274);
+            this.dtFechaNacimiento.Location = new System.Drawing.Point(562, 257);
             this.dtFechaNacimiento.Name = "dtFechaNacimiento";
             this.dtFechaNacimiento.Size = new System.Drawing.Size(269, 23);
             this.dtFechaNacimiento.TabIndex = 50;
@@ -259,28 +301,28 @@
             // 
             this.lblFechaNacimiento.AutoSize = true;
             this.lblFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(393, 276);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(393, 259);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
             this.lblFechaNacimiento.Size = new System.Drawing.Size(163, 20);
             this.lblFechaNacimiento.TabIndex = 48;
             this.lblFechaNacimiento.Text = "Fecha de Nacimiento:";
             this.lblFechaNacimiento.Visible = false;
             // 
-            // lblApodo
+            // lblLegajo
             // 
-            this.lblApodo.AutoSize = true;
-            this.lblApodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApodo.Location = new System.Drawing.Point(51, 276);
-            this.lblApodo.Name = "lblApodo";
-            this.lblApodo.Size = new System.Drawing.Size(61, 20);
-            this.lblApodo.TabIndex = 46;
-            this.lblApodo.Text = "Legajo:";
-            this.lblApodo.Visible = false;
+            this.lblLegajo.AutoSize = true;
+            this.lblLegajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLegajo.Location = new System.Drawing.Point(51, 259);
+            this.lblLegajo.Name = "lblLegajo";
+            this.lblLegajo.Size = new System.Drawing.Size(61, 20);
+            this.lblLegajo.TabIndex = 46;
+            this.lblLegajo.Text = "Legajo:";
+            this.lblLegajo.Visible = false;
             // 
             // txtApodo
             // 
             this.txtApodo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtApodo.Location = new System.Drawing.Point(117, 276);
+            this.txtApodo.Location = new System.Drawing.Point(117, 259);
             this.txtApodo.Name = "txtApodo";
             this.txtApodo.Size = new System.Drawing.Size(269, 23);
             this.txtApodo.TabIndex = 45;
@@ -385,73 +427,74 @@
             this.lblDniOApellidoNombre.TabIndex = 36;
             this.lblDniOApellidoNombre.Text = "Apellido y Nombre(*):";
             // 
-            // lblTexto
+            // progressBar1
             // 
-            this.lblTexto.AutoSize = true;
-            this.lblTexto.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTexto.Location = new System.Drawing.Point(337, 150);
-            this.lblTexto.Name = "lblTexto";
-            this.lblTexto.Size = new System.Drawing.Size(298, 25);
-            this.lblTexto.TabIndex = 39;
-            this.lblTexto.Text = "Seleccione una función del Menú";
+            this.progressBar1.Location = new System.Drawing.Point(301, 362);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(330, 23);
+            this.progressBar1.TabIndex = 64;
+            this.progressBar1.Value = 50;
+            this.progressBar1.Visible = false;
             // 
-            // textBox1
+            // btnFicha
             // 
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Location = new System.Drawing.Point(366, 400);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 23);
-            this.textBox1.TabIndex = 67;
-            this.textBox1.Visible = false;
+            this.btnFicha.Image = global::AplicacionDeControl.Properties.Resources.usuario_3_;
+            this.btnFicha.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFicha.Location = new System.Drawing.Point(9, 321);
+            this.btnFicha.Name = "btnFicha";
+            this.btnFicha.Size = new System.Drawing.Size(133, 55);
+            this.btnFicha.TabIndex = 9;
+            this.btnFicha.Text = "Ficha Personal";
+            this.btnFicha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFicha.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnFicha.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // cmbSecretaria
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(178, 400);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 20);
-            this.label1.TabIndex = 66;
-            this.label1.Text = "Dirección Perteneciente:";
-            this.label1.Visible = false;
+            this.cmbSecretaria.FormattingEnabled = true;
+            this.cmbSecretaria.Location = new System.Drawing.Point(366, 299);
+            this.cmbSecretaria.Name = "cmbSecretaria";
+            this.cmbSecretaria.Size = new System.Drawing.Size(269, 24);
+            this.cmbSecretaria.TabIndex = 70;
+            this.cmbSecretaria.Visible = false;
             // 
-            // textBox2
+            // cmbSubse
             // 
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox2.Location = new System.Drawing.Point(366, 443);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(269, 23);
-            this.textBox2.TabIndex = 69;
-            this.textBox2.Visible = false;
+            this.cmbSubse.FormattingEnabled = true;
+            this.cmbSubse.Location = new System.Drawing.Point(366, 339);
+            this.cmbSubse.Name = "cmbSubse";
+            this.cmbSubse.Size = new System.Drawing.Size(269, 24);
+            this.cmbSubse.TabIndex = 71;
+            this.cmbSubse.Visible = false;
             // 
-            // label2
+            // cmbDireccion
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(297, 443);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 20);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Puesto:";
-            this.label2.Visible = false;
+            this.cmbDireccion.FormattingEnabled = true;
+            this.cmbDireccion.Location = new System.Drawing.Point(366, 383);
+            this.cmbDireccion.Name = "cmbDireccion";
+            this.cmbDireccion.Size = new System.Drawing.Size(269, 24);
+            this.cmbDireccion.TabIndex = 72;
+            this.cmbDireccion.Visible = false;
             // 
-            // txtPeso
+            // txtPuesto
             // 
-            this.txtPeso.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPeso.Location = new System.Drawing.Point(366, 356);
-            this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(269, 23);
-            this.txtPeso.TabIndex = 63;
-            this.txtPeso.Visible = false;
+            this.txtPuesto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtPuesto.Location = new System.Drawing.Point(366, 469);
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Size = new System.Drawing.Size(269, 23);
+            this.txtPuesto.TabIndex = 74;
+            this.txtPuesto.Visible = false;
             // 
-            // txtAltura
+            // lblPuesto
             // 
-            this.txtAltura.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtAltura.Location = new System.Drawing.Point(366, 316);
-            this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(269, 23);
-            this.txtAltura.TabIndex = 62;
-            this.txtAltura.Visible = false;
+            this.lblPuesto.AutoSize = true;
+            this.lblPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuesto.Location = new System.Drawing.Point(297, 469);
+            this.lblPuesto.Name = "lblPuesto";
+            this.lblPuesto.Size = new System.Drawing.Size(63, 20);
+            this.lblPuesto.TabIndex = 73;
+            this.lblPuesto.Text = "Puesto:";
+            this.lblPuesto.Visible = false;
             // 
             // PersonalWF
             // 
@@ -460,12 +503,10 @@
             this.ClientSize = new System.Drawing.Size(1370, 743);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.progressBar1);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "PersonalWF";
             this.Text = "PersonalWF";
             this.Load += new System.EventHandler(this.PersonalWF_Load);
-            this.Controls.SetChildIndex(this.progressBar1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
             this.groupBox1.ResumeLayout(false);
@@ -481,19 +522,19 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnJugador;
-        private System.Windows.Forms.Button btnEliminarJugadorMenu;
+        private System.Windows.Forms.Button btnEliminarPersona;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lblIdJugador;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Label lblAltura;
-        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.Label lblSecretaria;
+        private System.Windows.Forms.Label lblSubse;
         private System.Windows.Forms.DateTimePicker dtFechaNacimiento;
         private System.Windows.Forms.ComboBox cmbSexo;
         private System.Windows.Forms.Label lblFechaNacimiento;
-        private System.Windows.Forms.Label lblApodo;
+        private System.Windows.Forms.Label lblLegajo;
         private System.Windows.Forms.TextBox txtApodo;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtDni;
@@ -506,11 +547,14 @@
         private System.Windows.Forms.TextBox txtBuscarApellidoNombre;
         private System.Windows.Forms.Label lblDniOApellidoNombre;
         private System.Windows.Forms.Label lblTexto;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPeso;
-        private System.Windows.Forms.TextBox txtAltura;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.TextBox txtArea;
+        private System.Windows.Forms.Label lblArea;
+        private System.Windows.Forms.Button btnFicha;
+        private System.Windows.Forms.TextBox txtPuesto;
+        private System.Windows.Forms.Label lblPuesto;
+        private System.Windows.Forms.ComboBox cmbDireccion;
+        private System.Windows.Forms.ComboBox cmbSubse;
+        private System.Windows.Forms.ComboBox cmbSecretaria;
     }
 }
